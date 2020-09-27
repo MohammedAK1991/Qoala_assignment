@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Container,
-  Image,
   List,
   Segment,
 } from 'semantic-ui-react'
@@ -10,11 +9,12 @@ export default function Footer() {
   return (
     <Segment inverted vertical
       style={{
-        backgroundColor :'rgb(236, 236, 236)',
+        backgroundColor :'#c794a3',
       }}
     >
       <Container textAlign='center'>
-        <Image centered size='mini' src='/qoala2.svg' />
+        {/* <Image centered size='mini' src='/qoala2.svg' /> */}
+        <h4 style={{color:'black'}}>Follow Me!</h4>
         <List horizontal divided link size='large'>
           <List.Item as='a' href='https://www.instagram.com/mohmedak_/' target="_blank">
             <i className="instagram blue icon large"></i>

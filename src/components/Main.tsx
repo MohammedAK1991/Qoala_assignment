@@ -24,11 +24,11 @@ const Main: React.FC <MainProps> = ({ images, onSubmit, isLoading }) => {
         <Menu
           attached='top'
           tabular
-          style={{ backgroundColor: '#fff', paddingTop: '0em' }}
+          style={{ backgroundColor: '#83c5be', paddingTop: '0em' }}
         >
           <Menu.Item as='a' href="/">
             <img src="/qoala.svg" alt="logo" />
-            <span style={{ fontFamily: 'Avenir', marginLeft: '5px', fontSize: '22px' }}>
+            <span style={{ fontFamily: 'Avenir', marginLeft: '5px', fontSize: '22px', fontWeight:'bolder' }}>
               Qoala Assignment
             </span>
           </Menu.Item>
@@ -36,11 +36,13 @@ const Main: React.FC <MainProps> = ({ images, onSubmit, isLoading }) => {
             <Menu.Item>
               <form onSubmit={onFormSubmit} >
                 <Input
-                  style={{ maxWidth: '30vw', minWidth: 'fit content' }}
+                  fluid
+                  autoFocus
+                  style={{ maxWidth: '30vw', minWidth: '22vw', backgroundColor:'orange' }}
                   value={term}
                   onChange={(event) => setTerm(event.target.value)}
-                  icon={{ name: 'search', link: true, circular: true, color: 'orange' }}
-                  placeholder='Search for a collection'
+                  icon={{ name: 'search', link: true, circular: true, color: 'orange', onClick: () => onFormSubmit }}
+                  placeholder='Search...'
                 />
               </form>
             </Menu.Item>
