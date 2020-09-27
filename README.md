@@ -2,7 +2,7 @@
 
 ### This repo contains my submission to a coding assignment
 
-#### I have also added tests to each exercise in test.js file
+#### I have also added integration tests with cypress and unit tests with jest
 
 ## Getting Started
 
