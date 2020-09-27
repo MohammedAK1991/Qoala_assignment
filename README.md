@@ -28,6 +28,7 @@ npm start
 ## API Keys
 
 For this demo to work, you must get an API key (along with secret code and collection name) from  [unsplash](https://unsplash.com/documentation#creating-a-developer-account)
+This API key must be in the .env.local file `REACT_APP_UNSPLASH_API_ACCESS_KEY`.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
