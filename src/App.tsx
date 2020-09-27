@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import unsplash from './api/unsplash';
+import Footer from './components/Footer';
+import Main from './components/Main';
 import shuffle from "lodash/shuffle";
 
 const App: React.FC = () => {
@@ -15,7 +17,7 @@ const App: React.FC = () => {
       .get('/search/collections', {
         params: {
           query: collectionNames.pop().toString(),
-          per_page: 6//eslint-disable-line
+          per_page: 6
         },
       })
       .then((res) => {
@@ -26,7 +28,7 @@ const App: React.FC = () => {
           .get('/search/collections', {
             params: {
               query: collectionNames.pop().toString(),
-              per_page: 6//eslint-disable-line
+              per_page: 6
             },
           })
           .then((res) => {
@@ -38,7 +40,7 @@ const App: React.FC = () => {
           .get('/search/collections', {
             params: {
               query: collectionNames.pop().toString(),
-              per_page: 6 //eslint-disable-line
+              per_page: 6
             },
           })
           .then((res) => {
@@ -46,11 +48,31 @@ const App: React.FC = () => {
             setImages(images => [...images, ...res.data.results]);
           })
       })
-  }, []);
+  }, []);//eslint-disable-line
+
+  const onSubmit = (term:any) => {
+    setIsLoading(true);
+    unsplash
+      .get('/search/collections', {
+        params: {
+          query: term.toString(),
+          per_page: 15
+        },
+      })
+      .then((res) => {
+        setImages(res.data.results);
+        setIsLoading(false);
+      })
+  }
 
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div style={{ marginTop: 0 }}>
+      <Main
+        images={shuffle(images)}
+        isLoading={isLoading}
+        onSubmit={onSubmit}
+      />
+      <Footer/>
     </div>
   );
 }
