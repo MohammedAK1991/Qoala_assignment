@@ -21,7 +21,7 @@ const ImageCard: React.FC<{ image: any }> = ({ image }) => {
         src={image.preview_photos[0].urls.regular}
         onLoad={setImageSpans}
       />
-      <p>
+      <p style={{fontWeight:700}}>
         {image.title.toUpperCase()|| 'no description provided'}
       </p>
     </div>

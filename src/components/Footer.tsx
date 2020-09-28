@@ -9,11 +9,10 @@ export default function Footer() {
   return (
     <Segment inverted vertical
       style={{
-        backgroundColor :'#c794a3',
+        backgroundColor :'#e85d04',
       }}
     >
       <Container textAlign='center'>
-        {/* <Image centered size='mini' src='/qoala2.svg' /> */}
         <h4 style={{color:'black'}}>Follow Me!</h4>
         <List horizontal divided link size='large'>
           <List.Item as='a' href='https://www.instagram.com/mohmedak_/' target="_blank">

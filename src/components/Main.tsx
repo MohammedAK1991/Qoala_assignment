@@ -38,11 +38,10 @@ const Main: React.FC <MainProps> = ({ images, onSubmit, isLoading }) => {
                 <Input
                   fluid
                   autoFocus
-                  style={{ maxWidth: '30vw', minWidth: '22vw', backgroundColor:'orange' }}
+                  action={{ icon: 'search', color:'orange' }}
+                  style={{ maxWidth: '30vw', minWidth: '22vw'}}
                   value={term}
                   onChange={(event) => setTerm(event.target.value)}
-                  icon={{ name: 'search', link: true, circular: true, color: 'orange', onClick: () => onFormSubmit }}
-                  placeholder='Search...'
                 />
               </form>
             </Menu.Item>
