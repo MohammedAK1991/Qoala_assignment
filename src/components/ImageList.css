@@ -1,3 +1,9 @@
+body {
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 .image-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
