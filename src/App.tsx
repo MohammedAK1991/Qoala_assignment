@@ -6,7 +6,7 @@ import shuffle from "lodash/shuffle";
 
 const App: React.FC = () => {
 
-  let collectionNames: string[] = ['kids', 'food', 'travel', 'dogs', 'beer', 'guitar', 'books', 'video games'];
+  let collectionNames: string[] = ['stars', 'food', 'travel', 'dogs', 'nature', 'guitar', 'fashion', 'video games'];
   collectionNames = shuffle(collectionNames);
 
   const [images, setImages] = useState([]);
