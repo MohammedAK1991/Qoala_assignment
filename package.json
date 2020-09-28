@@ -24,9 +24,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build:dev": "dotenv -e .env.development react-scripts build && mv build dist",
-        "build:prod": "dotenv -e .env.production react-scripts build && mv build dist",
-        "build": "echo \"Please use build:dev or build:prod \" && exit 1",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "cypress": "cypress open"
@@ -45,8 +43,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "dotenv-cli": "^4.0.0"
     }
 }
