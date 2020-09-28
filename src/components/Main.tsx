@@ -11,7 +11,7 @@ type MainProps = {
 const Main: React.FC <MainProps> = ({ images, onSubmit, isLoading }) => {
   const contextRef = useRef();
 
-  const [term, setTerm] = useState(null);
+  const [term, setTerm] = useState('');
 
   const onFormSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
@@ -38,6 +38,7 @@ const Main: React.FC <MainProps> = ({ images, onSubmit, isLoading }) => {
                 <Input
                   fluid
                   autoFocus
+                  id="search"
                   action={{ icon: 'search', color:'orange' }}
                   style={{ maxWidth: '30vw', minWidth: '22vw'}}
                   value={term}
