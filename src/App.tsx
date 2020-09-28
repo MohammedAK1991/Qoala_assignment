@@ -50,7 +50,7 @@ const App: React.FC = () => {
       })
   }, []);//eslint-disable-line
 
-  const onSubmit = (term:any) => {
+  const onSubmit = (term:string) => {
     setIsLoading(true);
     unsplash
       .get('/search/collections', {
