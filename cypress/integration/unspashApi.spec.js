@@ -23,7 +23,7 @@ describe('Request', () => {
   it('returns an empty array when an invalid search term is entered', () => {
     cy.request('https://api.unsplash.com', {
       params: {
-        query: 'nature',
+        query: 'asdfadfcdsfcdcsd',
         per_page: 6
       },
       headers: {

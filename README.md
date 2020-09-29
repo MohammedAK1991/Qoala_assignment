@@ -25,6 +25,14 @@ REACT_APP_UNSPLASH_API_ACCESS_KEY= <your api key goes here>
 ```
 npm start
 ```
+5. Launch the test runner in the interactive watch mode
+```
+npm test
+```
+6. Inegration test with cypress
+```
+npm run cypress
+```
 ## API Keys
 
 For this demo to work, you must get an API key (along with secret code and collection name) from  [unsplash](https://unsplash.com/documentation#creating-a-developer-account)
@@ -46,14 +54,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-#####  `npm test`
+##### `npm run build:prod`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-##### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
+Builds the app for production to a `dist` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
