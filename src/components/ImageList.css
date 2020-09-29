@@ -10,6 +10,9 @@ body {
     grid-gap: 2;
     grid-auto-rows: auto;
     min-height: 75vh;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .image-list img {
