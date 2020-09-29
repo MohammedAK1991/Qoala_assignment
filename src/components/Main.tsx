@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Input, Menu, Segment, Sticky, Image } from 'semantic-ui-react';
+import { Input, Menu, Segment, Sticky } from 'semantic-ui-react';
 import ImageList from './ImageList';
 
 type MainProps = {
