@@ -2,6 +2,10 @@
 
 ### This repo contains my submission to a coding assignment
 
+### Live Demo
+
+You can find a prototype of this App [here](https://qoala-assignment.netlify.app/)
+
 #### I have also added integration tests with cypress and unit tests with jest
 
 ## Getting Started
