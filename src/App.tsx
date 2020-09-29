@@ -62,6 +62,7 @@ const App: React.FC = () => {
       .then((res) => {
         setImages(res.data.results);
         setIsLoading(false);
+        console.log(res.data.results);
       })
   }
 
