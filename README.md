@@ -6,7 +6,11 @@
 
 You can find a prototype of this App [here](https://qoala-assignment.netlify.app/)
 
-![](./public/qoala-assignment.png)
+<!-- ![](./public/qoala-assignment.png) -->
+
+<p align="center">
+<a href="https://qoala-assignment.netlify.app/"><img src="/public/qoala-assignment.png" width=550px alt="link"/></a>
+</p>
 
 #### I have also added integration tests with cypress and unit tests with jest
 
