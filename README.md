@@ -32,7 +32,7 @@ You will also see any lint errors in the console.
 ```
 npm test
 ```
-6. Inegration test with cypress
+6. Run integration test with cypress
 ```
 npm run cypress
 ```
