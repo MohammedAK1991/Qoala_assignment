@@ -22,10 +22,13 @@ npm install
 REACT_APP_UNSPLASH_API_ACCESS_KEY= <your api key goes here>
 ```
 4. Start the application on localhost
+
 ```
 npm start
 ```
 5. Launch the test runner in the interactive watch mode
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 ```
 npm test
 ```
@@ -42,7 +45,7 @@ This API key must be in the .env.local file `REACT_APP_UNSPLASH_API_ACCESS_KEY`.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-####  Available Scripts
+####  Additional Scripts
 
 In the project directory, you can run:
 
@@ -58,6 +61,3 @@ You will also see any lint errors in the console.
 
 Builds the app for production to a `dist` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
