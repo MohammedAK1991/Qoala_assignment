@@ -1,4 +1,4 @@
-## 🤘🏻 HELLO THERE 🤘🏻
+## TECH ASSIGNMENT
 
 ### This repo contains my submission to a coding assignment
 
