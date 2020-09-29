@@ -48,7 +48,7 @@ const App: React.FC = () => {
             setImages(images => [...images, ...res.data.results]);
           })
       })
-  }, []);//eslint-disable-line
+  }, []);
 
   const onSubmit = (term:string) => {
     setIsLoading(true);

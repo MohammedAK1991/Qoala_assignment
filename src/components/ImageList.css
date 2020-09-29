@@ -7,7 +7,7 @@ body {
 .image-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 0;
+    grid-gap: 2;
     grid-auto-rows: auto;
     min-height: 75vh;
 }
